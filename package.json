@@ -1,0 +1,47 @@
+{
+  "name": "passgen",
+  "version": "1.0.0",
+  "description": "En lösenordsgenererare för dem som älskar att ha med Zac i deras lösenord",
+  "main": "main.js",               
+  "author": "Victor Olofsson",
+  "license": "ISC",
+  "scripts": {
+    "start": "electron .",
+    "build": "electron-builder"    
+  },
+  "devDependencies": {
+    "electron": "^39.0.0",
+    "electron-builder": "^24.6.0"  
+  },
+  "build": {
+    "appId": "com.victor.passgen",
+    "productName": "ZacPassGen",   
+    "files": [
+      "main.js",
+      "preload.js",
+      "index.html",
+      "style.css",
+      "script.js",
+      "images/**/*",
+      "sounds/**/*",
+      "gifs/**/*",
+      "icon.png",
+      "package.json"
+    ],
+    "directories": {
+      "output": "dist"             
+    },
+    "win": {
+      "target": "nsis",            
+      "icon": "icon.png"
+    },
+    "mac": {
+      "target": "dmg",
+      "icon": "icon.png"
+    },
+    "linux": {
+      "target": "AppImage",
+      "icon": "icon.png"
+    }
+  }
+}

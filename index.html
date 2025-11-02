@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Zacs Lösenordgenererare DELUXE EDITTION</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <div class="titlebar">
+    <div class="app-title">
+        <img src="icon.png" alt="App Icon" class="titlebar-icon">
+        <span>Zac's Password Generator Deluxe</span>
+        </div>
+    <div class="window-controls">
+        <button id="minBtn">—</button>
+        <button id="maxBtn">⬜</button>
+        <button id="closeBtn">✕</button>
+    </div>
+    </div>
+    <div id="bg-container"></div>
+    <div class="container">
+
+    <h1>Zacs Lösenordgenererare DELUXE EDITTION</h1>
+    <img id="displayImage" src="" alt="Funny image" class="top-image">
+
+    <div class="password-box">
+        <input type="text" id="password" readonly>
+        <button id="copy">Kopiera</button>
+    </div>
+    <div class="options">
+    <label>Length: <input type="number" id="length" value="12" min="4" max="32"></label>
+    <label><input type="checkbox" id="uppercase"> Uppercase</label>
+    <label><input type="checkbox" id="lowercase"> Lowercase</label>
+    <label><input type="checkbox" id="numbers"> Numbers</label>
+    <label><input type="checkbox" id="symbols"> Symbols</label>
+    <label><input type="checkbox" id="includeMeme" checked> ZAC DELUXE EDITION BUTTON </label>
+    </div>
+    <button id="generate">ZAC PASS</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
